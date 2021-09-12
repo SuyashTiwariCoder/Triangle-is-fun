@@ -17,6 +17,6 @@ function clickEventHandler() {
   if (sum === 180) {
     outputE.innerText = "Yes These attributes are of a Triangle ";
   } else {
-    outputE.innerText = "No Angles with sum 180 will always make a triangle ";
+    outputE.innerText = "No !! , Angles with sum 180 will only make a triangle ";
   }
 }
