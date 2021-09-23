@@ -2,7 +2,7 @@ let input_of_sides = document.querySelectorAll(".sides-input");
 
 let checkBtn = document.querySelector("#check-btn");
 let output = document.querySelector("#output");
-checkBtn.addEventListener("click", calculateHypo);
+checkBtn.addEventListener("click", isPositive);
 
 function calculateHypo() {
   let c = calculateSumOfSquares(
@@ -16,4 +16,18 @@ function calculateHypo() {
 function calculateSumOfSquares(a, b) {
   const c = a * a + b * b;
   return c;
+}
+
+
+function isPositive() {
+  if (  Number(input_of_sides[0].value) >= 0 ) {
+   if (Number(input_of_sides[1].value)>= 0 ) {
+     calculateHypo()
+   } else {
+    alert("Enter the Postive value of Height")
+   }
+    
+  } else {
+    alert("Enter the Postive value of Base")
+  }
 }
