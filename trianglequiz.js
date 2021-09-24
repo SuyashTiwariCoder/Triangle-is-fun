@@ -1,7 +1,7 @@
 let btn = document.querySelector("#submit-btn")
 let quizform = document.querySelector(".question-form")
 let output = document.querySelector("#output")
-let correctAnswers = ["acute", "equilateral"]
+let correctAnswers = ["acute", "equilateral" , "Midsegment" , "Circumcenter" , "Angle Bisector" , "Concurrent" , "Centroid" , "Altitude" , "Pythagoras" , "3"]
 btn.addEventListener('click', calculateScore)
 
 function calculateScore() {
