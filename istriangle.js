@@ -27,14 +27,14 @@ function isPositive() {
       if ( Number(inputs[2].value)>0) {
         clickEventHandler();
       } else {
-        alert("Angle 3 can't be Negative ")
+        alert("Angle 3 is invalid  ")
       }
       
     } else {
-      alert("Angle 2 can't be Negative ")
+      alert("Angle 2 is invalid  ")
     }
     
   } else {
-    alert("Angle 1 can't be Negative  ")
+    alert("Angle 1 is invalid  ")
   }
 }

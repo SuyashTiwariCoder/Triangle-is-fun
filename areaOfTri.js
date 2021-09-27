@@ -10,14 +10,31 @@ function calculateArea() {
   output.innerText = "The area of Tringle is =>" + area;
 }
 
+
+
+
+
 function isPositive() {
-  if (Number(inputBase.value) >= 0) {
-    if (Number(inputHeight.value) >= 0) {
-      calculateArea();
-    } else {
-      alert("Height cannot be negative");
-    }
+
+  if ( Number(inputBase.value) > 0 && Number(inputHeight.value) > 0) {
+    calculateArea();
   } else {
-    alert("Base cannot be negative");
+     alert ('Invalid Input')
   }
+
+
+
 }
+//This below logic moderators told that it takes zero also and it takes blank input also so i have changed it 
+
+// function isPositive() {
+//   if (Number(inputBase.value) >= 0) {
+//     if (Number(inputHeight.value) >= 0) {
+//       calculateArea();
+//     } else {
+//       alert("Height cannot be negative");
+//     }
+//   } else {
+//     alert("Base cannot be negative");
+//   }
+// }

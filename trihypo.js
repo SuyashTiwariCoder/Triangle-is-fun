@@ -18,16 +18,32 @@ function calculateSumOfSquares(a, b) {
   return c;
 }
 
-
 function isPositive() {
-  if (  Number(input_of_sides[0].value) >= 0 ) {
-   if (Number(input_of_sides[1].value)>= 0 ) {
-     calculateHypo()
-   } else {
-    alert("Enter the Postive value of Height")
-   }
-    
+
+  if ( Number(input_of_sides[0].value) > 0 && Number(input_of_sides[1].value)>  0) {
+    calculateHypo()
   } else {
-    alert("Enter the Postive value of Base")
+     alert ('Invalid Input')
   }
+
+
+
 }
+
+
+
+//This below logic moderators told that it takes zero also and it takes blank input also so i have changed it 
+
+
+// function isPositive() {
+//   if (  Number(input_of_sides[0].value) >= 0 ) {
+//    if (Number(input_of_sides[1].value)>= 0 ) {
+//      
+//    } else {
+//     alert("Enter the Postive value of Height")
+//    }
+    
+//   } else {
+//     alert("Enter the Postive value of Base")
+//   }
+// }
